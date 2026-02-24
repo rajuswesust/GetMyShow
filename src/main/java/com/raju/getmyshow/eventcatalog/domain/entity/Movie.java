@@ -53,11 +53,11 @@ public class Movie extends BaseEntity {
     @Column(name = "imdb_rating", precision = 3, scale = 1)
     private BigDecimal imdbRating;
 
-    @Column(name = "user_rating", nullable = false, scale = 1)
-    private BigDecimal user_rating;
+    @Column(name = "user_rating", scale = 1)
+    private BigDecimal userRating;
 
     @Column(name = "release_date", nullable = false)
-    private LocalDate release_date;
+    private LocalDate releaseDate;
 
     @Column(name = "original_language", nullable = false, length = 50)
     private String originalLanguage;

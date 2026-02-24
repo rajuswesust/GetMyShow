@@ -32,6 +32,9 @@ public class Screen extends BaseEntity {
     @Column(name = "total_seats", nullable = false)
     private Integer totalSeats;
 
+    @Column(name = "total_rows", nullable = false)
+    private Integer totalRows;
+
     @Column(name = "seats_per_row")
     private Integer seatsPerRow;
 

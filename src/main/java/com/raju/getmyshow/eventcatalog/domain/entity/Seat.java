@@ -45,7 +45,7 @@ public class Seat {
     private Boolean isAisle = false;  // Aisle seat
 
     @Column(name = "created_at", nullable = false)
-    private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime createdAt;
 
     /**
      * 💡 DENORMALIZATION: display_label
@@ -69,11 +69,13 @@ public class Seat {
      * 💡 PATTERN: Lifecycle hook
      * - Runs before INSERT
      * - Auto-generates display label
+     * set the createdAt field to the current time
      */
     @PrePersist
-    public void generateDisplayLabel() {
+    public void onPrePersist() {
         if (this.displayLabel == null) {
             this.displayLabel = this.rowLabel + this.seatNumber;
         }
+        this.createdAt = LocalDateTime.now();
     }
 }
