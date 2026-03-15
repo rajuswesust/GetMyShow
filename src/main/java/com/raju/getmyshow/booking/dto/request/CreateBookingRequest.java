@@ -2,6 +2,8 @@ package com.raju.getmyshow.booking.dto.request;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
+import lombok.Builder;
+import lombok.Data;
 
 import java.util.List;
 
@@ -10,10 +12,12 @@ import java.util.List;
  * {
  *     "userId": 1,
  *     "showId": 2,
- *     "seatIds": [1, 2, 3],
+ *     "seatInventoryIds": [1, 2, 3],
  *     "sessionId": "xyz1234"
  * }
  */
+@Builder
+@Data
 public class CreateBookingRequest {
 
     @NotNull(message = "User ID is required")
@@ -23,7 +27,7 @@ public class CreateBookingRequest {
     private Long showId;
 
     @NotEmpty(message = "At least one seat must be selected")
-    private List<Long> seatIds;
+    private List<Long> seatInventoryIds;
 
     /**
      * 💡 Session ID for seat locking

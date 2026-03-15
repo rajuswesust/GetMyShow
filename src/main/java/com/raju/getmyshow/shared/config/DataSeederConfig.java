@@ -42,6 +42,7 @@ public class DataSeederConfig {
             log.info("Starting data seeding...");
 
             if(eventRepository.count() > 0) {
+                log.info("Found events :::: {}", eventRepository.count());
                 log.info("Data already exists...");
                 log.info("Quiting Data Seeding...");
                 return;
@@ -62,7 +63,26 @@ public class DataSeederConfig {
             Show show2 = createShow(event1, screen1, "Mumbai", LocalDateTime.now().plusDays(1).withHour(18).withMinute(30));
             Show show3 = createShow(event2, screen2, "Mumbai", LocalDateTime.now().plusDays(2).withHour(15).withMinute(0));
 
+            // 5. CREATE SEAT INVENTORY (CRITICAL!)
+            log.info("🎫 Creating seat inventory for show 1...");
+            createSeatInventory(show1, screen1Seats);
+
+            log.info("🎫 Creating seat inventory for show 2...");
+            createSeatInventory(show2, screen1Seats);
+
+            log.info("🎫 Creating seat inventory for show 3...");
+            createSeatInventory(show3, screen2Seats);
+
             log.info("Data seeding completed.");
+
+            // Verify
+            long inventoryCount = seatInventoryRepository.count();
+            log.info("✅ Data seeding completed!");
+            log.info("📊 Total seat inventory records: {}", inventoryCount);
+
+            if (inventoryCount == 0) {
+                log.error("❌ WARNING: Seat inventory is empty!");
+            }
         };
     }
 

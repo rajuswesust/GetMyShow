@@ -46,14 +46,6 @@ spring:
     validate-on-migrate: true
     clean-disabled: true  # Safety: prevent accidental data loss
 
-# Logging Configuration
-logging:
-  level:
-    org.hibernate.SQL: DEBUG
-    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
-    org.springframework.jdbc.core: DEBUG
-    org.flywaydb: INFO
-    com.zaxxer.hikari: INFO
 
 # Server Configuration
 server:
