@@ -6,7 +6,7 @@ A multi-event booking platform built with Spring Boot. Supports booking for movi
 
 - **Java 17** / **Spring Boot 3.5**
 - **PostgreSQL** + **Flyway** migrations
-- **Apache Kafka** for async messaging
+- **RabbitMQ** for async messaging
 - **Gradle** build system
 
 ## Modules
@@ -25,7 +25,7 @@ A multi-event booking platform built with Spring Boot. Supports booking for movi
 
 - Java 17+
 - PostgreSQL (port 5433)
-- Apache Kafka
+- RabbitMQ
 
 ### Run
 
