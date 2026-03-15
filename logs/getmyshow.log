@@ -1,0 +1,127 @@
+2026-03-16 01:08:24.866 INFO  [kground-preinit]  o.h.validator.internal.util.Version:21   - HV000001: Hibernate Validator 8.0.3.Final
+2026-03-16 01:08:24.931 INFO  [           main]   c.r.getmyshow.GetmyshowApplication:53   - Starting GetmyshowApplication using Java 17.0.12 with PID 9500 (D:\_raZu_\getmyshow\build\classes\java\main started by raju.singho in D:\_raZu_\getmyshow)
+2026-03-16 01:08:24.932 INFO  [           main]   c.r.getmyshow.GetmyshowApplication:658  - The following 1 profile is active: "dev"
+2026-03-16 01:08:26.269 INFO  [           main] .r.c.RepositoryConfigurationDelegate:145  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-16 01:08:26.375 INFO  [           main] .r.c.RepositoryConfigurationDelegate:213  - Finished Spring Data repository scanning in 92 ms. Found 11 JPA repository interfaces.
+2026-03-16 01:08:27.289 INFO  [           main]     o.s.b.w.e.tomcat.TomcatWebServer:111  - Tomcat initialized with port 8080 (http)
+2026-03-16 01:08:27.304 INFO  [           main]  o.a.coyote.http11.Http11NioProtocol:168  - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-16 01:08:27.308 INFO  [           main]    o.a.catalina.core.StandardService:168  - Starting service [Tomcat]
+2026-03-16 01:08:27.309 INFO  [           main]     o.a.catalina.core.StandardEngine:168  - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-03-16 01:08:27.401 INFO  [           main]   o.a.c.c.C.[Tomcat].[localhost].[/]:168  - Initializing Spring embedded WebApplicationContext
+2026-03-16 01:08:27.401 INFO  [           main] c.ServletWebServerApplicationContext:301  - Root WebApplicationContext: initialization completed in 2424 ms
+2026-03-16 01:08:27.877 INFO  [           main]   com.zaxxer.hikari.HikariDataSource:109  - GetMyShowHikariPool - Starting...
+2026-03-16 01:08:28.181 INFO  [           main]    com.zaxxer.hikari.pool.HikariPool:580  - GetMyShowHikariPool - Added connection org.postgresql.jdbc.PgConnection@430d3021
+2026-03-16 01:08:28.183 INFO  [           main]   com.zaxxer.hikari.HikariDataSource:122  - GetMyShowHikariPool - Start completed.
+2026-03-16 01:08:28.303 INFO  [           main]     org.flywaydb.core.FlywayExecutor:41   - Database: jdbc:postgresql://localhost:5433/getmyshow_dev (PostgreSQL 15.14)
+2026-03-16 01:08:28.496 INFO  [           main] o.f.core.internal.command.DbValidate:41   - Successfully validated 3 migrations (execution time 00:00.093s)
+2026-03-16 01:08:28.537 INFO  [           main]  o.f.core.internal.command.DbMigrate:41   - Current version of schema "public": 2
+2026-03-16 01:08:28.544 INFO  [           main]  o.f.core.internal.command.DbMigrate:41   - Schema "public" is up to date. No migration necessary.
+2026-03-16 01:08:28.690 INFO  [           main]      o.h.jpa.internal.util.LogHelper:31   - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-16 01:08:28.777 INFO  [           main]                org.hibernate.Version:44   - HHH000412: Hibernate ORM core version 6.6.29.Final
+2026-03-16 01:08:28.830 INFO  [           main]       o.h.c.i.RegionFactoryInitiator:50   - HHH000026: Second-level cache disabled
+2026-03-16 01:08:29.207 INFO  [           main]  o.s.o.j.p.SpringPersistenceUnitInfo:87   - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-16 01:08:29.300 WARN  [           main]        org.hibernate.orm.deprecation:153  - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-16 01:08:29.324 INFO  [           main]  o.hibernate.orm.connections.pooling:163  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (GetMyShowHikariPool)']
+	Database driver: undefined/unknown
+	Database version: 15.14
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-16 01:08:31.450 INFO  [           main]   o.h.e.t.j.p.i.JtaPlatformInitiator:59   - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-16 01:08:31.593 INFO  [           main] calContainerEntityManagerFactoryBean:447  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-16 01:08:32.193 WARN  [           main] aseConfiguration$JpaWebConfiguration:258  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-16 01:08:32.248 WARN  [           main] .UserDetailsServiceAutoConfiguration:90   - 
+
+Using generated security password: ed21e8c2-5980-4588-bafa-eb29b47b08cb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-16 01:08:32.261 INFO  [           main] itializeUserDetailsManagerConfigurer:110  - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-03-16 01:08:33.208 INFO  [           main]  o.s.b.a.e.web.EndpointLinksResolver:60   - Exposing 1 endpoint beneath base path '/actuator'
+2026-03-16 01:08:33.330 INFO  [           main]  o.a.coyote.http11.Http11NioProtocol:168  - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-16 01:08:33.365 INFO  [           main]     o.s.b.w.e.tomcat.TomcatWebServer:243  - Tomcat started on port 8080 (http) with context path '/'
+2026-03-16 01:08:33.384 INFO  [           main]   c.r.getmyshow.GetmyshowApplication:59   - Started GetmyshowApplication in 9.142 seconds (process running for 9.902)
+2026-03-16 01:08:33.451 INFO  [           main] c.r.g.shared.config.DataSeederConfig:42   - Starting data seeding...
+2026-03-16 01:08:33.932 DEBUG [           main]                    org.hibernate.SQL:135  - 
+    /* select
+        count(*) 
+    from
+        Event x */ select
+            count(*) 
+        from
+            events e1_0
+2026-03-16 01:08:33.979 DEBUG [           main]                    org.hibernate.SQL:135  - 
+    /* select
+        count(*) 
+    from
+        Event x */ select
+            count(*) 
+        from
+            events e1_0
+2026-03-16 01:08:33.983 INFO  [           main] c.r.g.shared.config.DataSeederConfig:45   - Found events :::: 2
+2026-03-16 01:08:33.983 INFO  [           main] c.r.g.shared.config.DataSeederConfig:46   - Data already exists...
+2026-03-16 01:08:33.983 INFO  [           main] c.r.g.shared.config.DataSeederConfig:47   - Quiting Data Seeding...
+2026-03-16 01:08:40.818 INFO  [nio-8080-exec-1]   o.a.c.c.C.[Tomcat].[localhost].[/]:168  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-16 01:08:40.818 INFO  [nio-8080-exec-1]    o.s.web.servlet.DispatcherServlet:532  - Initializing Servlet 'dispatcherServlet'
+2026-03-16 01:08:40.820 INFO  [nio-8080-exec-1]    o.s.web.servlet.DispatcherServlet:554  - Completed initialization in 2 ms
+2026-03-16 01:08:40.889 INFO  [nio-8080-exec-1] c.r.g.b.controller.BookingController:27   - GET /api/shows/1/seats
+2026-03-16 01:08:40.906 DEBUG [nio-8080-exec-1]                    org.hibernate.SQL:135  - 
+    select
+        s1_0.id,
+        s1_0.available_seats,
+        s1_0.base_price,
+        s1_0.booking_closes_at,
+        s1_0.booking_opens_at,
+        s1_0.city,
+        s1_0.created_at,
+        s1_0.end_time,
+        s1_0.event_id,
+        s1_0.event_title,
+        s1_0.event_type,
+        s1_0.screen_id,
+        s1_0.status,
+        s1_0.start_time,
+        s1_0.total_seats,
+        s1_0.updated_at,
+        s1_0.venue_name 
+    from
+        shows s1_0 
+    where
+        s1_0.id=?
+2026-03-16 01:08:41.011 DEBUG [nio-8080-exec-1]                    org.hibernate.SQL:135  - 
+    /* <criteria> */ select
+        si1_0.id,
+        si1_0.booking_id,
+        si1_0.created_at,
+        si1_0.lock_expires_at,
+        si1_0.locked_at,
+        si1_0.locked_by,
+        si1_0.price,
+        si1_0.seat_id,
+        si1_0.status,
+        si1_0.show_id,
+        si1_0.updated_at,
+        si1_0.version 
+    from
+        seat_inventory si1_0 
+    where
+        si1_0.show_id=? 
+        and si1_0.status=?
+2026-03-16 01:08:41.057 DEBUG [nio-8080-exec-1]                    org.hibernate.SQL:135  - 
+    /* <criteria> */ select
+        s1_0.id,
+        s1_0.created_at,
+        s1_0.display_label,
+        s1_0.is_accessible,
+        s1_0.is_aisle,
+        s1_0.is_blocked,
+        s1_0.row_label,
+        s1_0.screen_id,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
